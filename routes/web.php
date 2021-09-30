@@ -21,3 +21,15 @@ Route::get('/', function () {
     ];
     return view('home', $data);
 });
+
+Route::get('/pagina1', function () {
+    return view('page1');
+})->name('page1');
+
+Route::get('/pagina2', function () {
+    return view('page2');
+})->name('page2');
+
+Route::get('/pagina3', function () {
+    return view('page3');
+})->name('page3');
