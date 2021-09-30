@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Home</title>
 </head>
-<body>
-    <h1>{{ $greeting }} {{ $word }}!!</h1>
+<body style="font-family: sans-serif">
+    <h1 style="text-align: center">{{ $greeting }} {{ $word }}!!</h1>
     <header>
         <ul>
             @foreach ($pages as $page)
