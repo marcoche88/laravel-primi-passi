@@ -14,5 +14,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+    // dati da passare alla home.blade.php come secondo parametro della funzione view()
+    $data = [
+        "greeting" => "Hello",
+        "word" => "World",
+    ];
+    return view('home', $data);
 });
